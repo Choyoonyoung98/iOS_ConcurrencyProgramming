@@ -64,7 +64,7 @@ DispatchQueue.global().async = 비동기적으로!
 대부분은 서버와의 통신 때문.(네트워크와 관련된 작업들은 내부적으로 비동기적으로 구현)
 ex) URLSession 자체 또한 이미 내부적으로 비동기적으로 실행된다
 
-## 4. Serial(직렬) VS Concurrent(동시)
+## 4. [큐의 2가지 특성] Serial(직렬) VS Concurrent(동시)
 ### Serial Queue(직렬 큐)
 - 보통 메인에서 분산처리 시킨 작업을 **"다른 한 개의 쓰레드에서"** 처리하는 큐
 - 순서가 중요한 작업을 처리할 때 사용
