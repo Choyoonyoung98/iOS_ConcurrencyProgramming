@@ -14,7 +14,7 @@ Queue의 종류(대기열의 종류)
 - Main Thread이자 MainQueue
 
 ex)
-```DispatchQueue.main.asyncAfter(.now() + 2) { } ```
+```DispatchQueue.main.asyncAfter(.now() + 2) { } ```  
 -> 지금으로부터 2초 뒤에 메인 스레드로 작업을 비동기적으로 보낼거야!
 
 #### mainQueue.async 
