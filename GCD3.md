@@ -103,4 +103,4 @@ asyncTilShift(image, runQueue: workingQueue, completionQueue: resultQueue) { ima
 }
 ```
 
-+) URLSession
++) URLSession과 같은 이미 비동기함수는 GCD/Operation이 필요없다. 이미 내장되어 있기 때문에
