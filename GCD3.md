@@ -98,6 +98,9 @@ func asyncTiltShift(_ inputImage: UIImage?, runQueue, DispatchQueue, completionQ
   }
 }
 
-asyncTilShift(iamge, runQueue: workingQueue, completionQueue: resultQueue) { image, error in image
-  print("
+asyncTilShift(image, runQueue: workingQueue, completionQueue: resultQueue) { image, error in image
+  print("비동기 작업의 실제종료시점")
+}
 ```
+
++) URLSession
