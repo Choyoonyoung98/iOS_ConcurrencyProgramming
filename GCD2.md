@@ -1,21 +1,21 @@
 ## 2. 디스패치큐(GCD)의 종류와 특성
-Queue의 종류(대기열의 종류)
-1)dispatchQueue
-1-1) Global(Main) DispatchQueue - 유일한 한 개의 큐, Serial, Main Thread
-1-2) Global DispatchQueue
-1-3) Private(Custom) DispatchQueue
-2) OperationQueue
+Queue의 종류(대기열의 종류)  
+1)dispatchQueue  
+1-1) Global(Main) DispatchQueue - 유일한 한 개의 큐, Serial, Main Thread  
+1-2) Global DispatchQueue  
+1-3) Private(Custom) DispatchQueue  
+2) OperationQueue  
 
 ### 2-1. MainQueue
-```DispatchQueue.main.async{ }```  
-- DispatchQueue의 한 종류
-- 유일한 하나의 큐
-- Serial Queue
-- Main Thread이자 MainQueue
+```DispatchQueue.main.async{ }```    
+- DispatchQueue의 한 종류  
+- 유일한 하나의 큐  
+- Serial Queue  
+- Main Thread이자 MainQueue  
 
 ex)
-```DispatchQueue.main.asyncAfter(.now() + 2) { } ```  
--> 지금으로부터 2초 뒤에 메인 스레드로 작업을 비동기적으로 보낼거야!
+```DispatchQueue.main.asyncAfter(.now() + 2) { } ```   
+-> 지금으로부터 2초 뒤에 메인 스레드로 작업을 비동기적으로 보낼거야!  
 
 #### mainQueue.async 
 ```
