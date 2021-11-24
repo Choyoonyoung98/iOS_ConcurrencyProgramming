@@ -29,8 +29,8 @@ iOS에서는 비동기프로그래밍 작업을 **"대기행렬(큐) - FIFO**  �
 
 ### 2-1. 그렇다면 어떻게 대기열로 작업을 보낼까?
 ```DispatchQueue.global().async{ 작업의 한 단위(task) } ```  
-Dispatch(보내다)Qeueue(대기행렬) = 큐에 보낼거야!
-DispatchQueue.global() = 글로벌큐에
+Dispatch(보내다)Qeueue(대기행렬) = 큐에 보낼거야!  
+DispatchQueue.global() = 글로벌큐에  
 DispatchQueue.global().async = 비동기적으로!
 
 **작업의 한 단위는 내부적으로 순차적으로 동작하게 된다**  
