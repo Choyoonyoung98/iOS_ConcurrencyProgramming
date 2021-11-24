@@ -27,10 +27,12 @@ mainQueue.sync {
   task1()
 }
 ```
-위의 두 동작은 의미상 같지만, 아래 코드는 에러가 발생된다!
+위의 두 동작은 의미상 같지만, 아래 코드는 에러가 발생된다!  
+왜? 이유는 다음 단원 참고  
 
 ### 2-2. GlobalQueue
-- 기본설정이 Concurrent로 되어 있다(분산하여 일을 처리하는)
+- 기본설정이 **Concurrent**로 되어 있다(분산하여 일을 처리하는)
+- Concurrent로 되어 있다는 뜻은? = 여러 개의 스레드로 작업을 보내서 처리하는 큐
 
 #### (중요한 순서로 qos 종류)  
 1) **userInteractive** : 거의 즉시
@@ -55,7 +57,7 @@ mainQueue.sync {
 let queue = DispatchQueue.global(qos: .background) //백그라운드로 정의
 queue.async(qos: .utility) { } //보낼 때는 더 높은 수준으로
 ```
--> queue가 작업에 영향을 받아서 background가 utility로 품질이 올라간다!
+-> queue가 작업에 영향을 받아서 background가 utility로 **품질이 올라간다!**  
 
 ### 2-3. Private(Custom) Queue
 - 커스텀으로 만든다
